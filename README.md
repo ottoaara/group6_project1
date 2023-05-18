@@ -5,33 +5,45 @@ group project git repo for data source and cleaning.
 # 5.5.23
 # data source mpls open data https://opendata.minneapolismn.gov/datasets/cityoflakes::crime-data/explore?location=19.216823%2C-46.664577%2C4.00
 # #CSV option under Crime Data Header
-#The main data set is large. The file is in three main parts. 
-* Please note due to size of main data set i have created a 1000 random row data set for ease of development
-* ran_crime_data_df
+#The main.ipynb is the code file.  Please open using Juyptr notebook. 
+# Read me file is this file 
+# The MPLS Crime Trends Slide Deck is a pdf file containing our presentaion for the project. 
+
+
+*The main data set is large. When navigating to the 
+* Please note the file path variable is set to use a Data Folder on your desktop.  
+* Please ensure you change your csv file path location if you save teh data set anywhere else.  
+* 
 * Please note when running the final version for presentation we will need to use data frame
-* crime_data_clean
+* crime_data_main
 part 1. - load
+Loading requries going to the url above on line 6
+First screen you will click download
+Second screen you will choose CSV file. 
+It will give you two options. 
+    1. May 18th (or close to)
+    2. Latest data avialable.  
+    **Please note either option will have slightly more data then we had available to do the anlsysis so your data shouldn't be expected to match exactly if you run your ownr results. 
+
 part 2. clean (removed all rows with null values)
-part 3. prep for analysis - created group by data sets grouping by address and neighborhoods then counting violent crimes by type.  
-grouped_data_bydate
-grouped_data_bylonglat 
+In this section there is some clearning and sorting of data sets. Including datatype foramting to ensure we can do calculations on data sets
+part 3. prep for analysis - created grouped and sub data sets exploring the high crime areas by crime time etc. : address and neighborhoods then counting violent crimes by type.  
+
 **please note sorted version of each set immeidatly below them in code. 
 
 #These are all the data sets built for ease of development.  Note the main file is large crime_data_main
-# I have reduced the data set to violent crimes data frame clean_data_crime 
-# Additionally for a corrleation puproses created two data sets 
-#.  crime_data_bydata. - data sets by date they occurred
-    crime_data_bylonglat- data sets by location.
-    Please note each of these data sets have groupbys arleady done in code for you
+# We have reduced the data set to violent crimes data frame clean_data_crime 
+
+
     
-#crime_data_main  = full data set (75 Megs so seperated out into groups for ease of dev)
-#ran_crime_data_df is a light 1000 rows of data randomly choosen from crime_data_man to work with
+#crime_data_main  = full data set 15 Megs so seperated out into groups for ease of dev)
+ 
 #crime_data_2019 = data for 2019 
 #crime_data_2020 ...
 #crime_data_2021 ...
 #crime_data_2022...
 ##crime_data_2023 = data for 2023 
 
-Data sets finnally were run using crime_data_clean so they are ready for further analysis and visualizations. 
-grouped_data_bydate
-grouped_data_bylonglat 
+Data sets finnally were run using crime_data_main so they are ready for further analysis and visualizations. 
+
+Thank you for reading through this plesae feel free to call me (Aaron) at 952 693 1378 with any questions. 
